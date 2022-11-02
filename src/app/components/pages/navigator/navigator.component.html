@@ -1,0 +1,13 @@
+<app-header class=" fixed w-full "></app-header>
+<p class="w-full text-right pr-36 pt-8 text-blue-900 text-xl font-normal uppercase fixed">{{selectedPage}}</p>
+<div class="flex">
+  <app-side-menu class="w-1/12" (selectedPage)="onChangePage($event)"></app-side-menu>
+  <app-admin-dashboard *ngIf="selectedPage=='dashboard'" class="w-11/12"></app-admin-dashboard>
+  <app-users *ngIf="selectedPage=='users'" class="w-11/12"></app-users>
+  <app-operations *ngIf="selectedPage=='operations'" class="w-11/12"></app-operations>
+  <app-reports *ngIf="selectedPage=='reports'" class="w-11/12"></app-reports>
+  <app-settings *ngIf="selectedPage=='settings'" class="w-11/12"></app-settings>
+</div>
+
+
+
