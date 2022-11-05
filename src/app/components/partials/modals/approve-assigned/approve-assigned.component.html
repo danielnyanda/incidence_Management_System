@@ -1,5 +1,6 @@
+<div class="dark:bg-gray-800 bg-white p-4">
 <div class="border-b border-gray-200 dark:border-gray-700 container flex flex-wrap justify-center items-center mx-auto">
-  <p class="text-center">Assing to Technician</p>
+  <p class="text-center dark:text-gray-400 text-gray-600">Assing to Technician</p>
 </div>
 <form [formGroup]="assignForm">
 <label for="technician" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Select an option</label>
@@ -12,3 +13,4 @@
 </select>
 </form>
 <button (click)="close()" type="button" class=" mt-4 text-white bg-blue-900 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 w-full">Assign</button>
+</div>

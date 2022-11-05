@@ -30,6 +30,10 @@ import { NewEnquiriesComponent } from './components/partials/enquiries/new-enqui
 import { ApproveComponent } from './components/partials/modals/approve/approve.component';
 import { ScheduleEnquiryComponent } from './components/partials/enquiries/schedule-enquiry/schedule-enquiry.component';
 import { ApproveAssignedComponent } from './components/partials/modals/approve-assigned/approve-assigned.component';
+import { InventoryComponent } from './components/pages/inventory/inventory.component';
+import { AllEquipmentsComponent } from './components/partials/inventory/all-equipments/all-equipments.component';
+import { AddEquipmentsComponent } from './components/partials/inventory/add-equipments/add-equipments.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -57,7 +61,10 @@ import { ApproveAssignedComponent } from './components/partials/modals/approve-a
     NewEnquiriesComponent,
     ApproveComponent,
     ScheduleEnquiryComponent,
-    ApproveAssignedComponent
+    ApproveAssignedComponent,
+    InventoryComponent,
+    AllEquipmentsComponent,
+    AddEquipmentsComponent
   ],
   imports: [
     BrowserModule,
@@ -67,6 +74,7 @@ import { ApproveAssignedComponent } from './components/partials/modals/approve-a
     ReactiveFormsModule,
     FormsModule,
     AngularMaterialModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
@@ -74,7 +82,8 @@ import { ApproveAssignedComponent } from './components/partials/modals/approve-a
     AddUserComponent,
     NewEnquiriesComponent,
     ApproveComponent,
-    ApproveAssignedComponent
+    ApproveAssignedComponent,
+    AddEquipmentsComponent
   ]
 })
 export class AppModule { }

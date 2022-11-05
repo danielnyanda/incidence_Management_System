@@ -33,7 +33,7 @@ export class OperationsComponent implements OnInit {
 
   addUser(){
     const dialogRef = this.dialog.open(NewEnquiriesComponent,{
-
+      panelClass: 'custom-dialog-container',
       width:'600px',
       height:'auto',
       // data:{
