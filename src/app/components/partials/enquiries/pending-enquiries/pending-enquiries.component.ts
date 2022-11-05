@@ -103,12 +103,13 @@ export class PendingEnquiriesComponent implements OnInit {
 
   approve() {
     const dialogRef = this.dialog.open(ApproveComponent, {
-
+      panelClass: 'custom-dialog-container',
       width: '400px',
       height: 'auto',
     }).afterClosed().subscribe(res => {
       if (res == 'Yes') {
         this.dialog.open(ApproveAssignedComponent, {
+          panelClass: 'custom-dialog-container',
           width: '400px',
           height: 'auto',
         }).afterClosed().subscribe(res =>{

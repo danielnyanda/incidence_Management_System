@@ -34,7 +34,7 @@ export class UsersComponent implements OnInit {
 
   addUser(){
     const dialogRef = this.dialog.open(AddUserComponent,{
-
+      panelClass: 'custom-dialog-container',
       width:'600px',
       height:'auto',
       // data:{
